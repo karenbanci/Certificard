@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Koh+Santepheap&family=Merriweather:ital,wght@1,300&display=swap");
+
+body {
+  background-color: #123761;
+  font-family: "Koh Santepheap", cursive;
+  /*   font-family: "Merriweather", serif; */
+}
+.container {
+  background: #eeeee4;
+  margin: 64px;
+  /* box-shadow cria uma sombra */
+  box-shadow: 2px 2px 2px #ffffff;
+  border-radius: 20px;
+  padding: 64px;
+}
+
+.perfil {
+  display: flex;
+  /*   align-items: center; */
+  justify-content: space-between;
+}
+
+.perfil-foto {
+  border-radius: 15px;
+  max-height: 160px;
+  box-shadow: 0px 4px 4px #c2bcbc;
+  margin: 30px;
+}
+
+.titulo {
+  margin-left: 20px;
+  color: #123761;
+}
+/* aqui só estou estilizando o h1 da classe título */
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h2 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.titulo h3 {
+  font-weight: 300;
+  font-size: 15px;
+}
+.list-inline {
+  background: #eeeee4;
+  list-style: none;
+  display: inline-flex;
+  font-size: 30px;
+  margin: 0px;
+}
+
+.list-inline li {
+  margin: 10px;
+}
+
+.list-inline li a {
+  color: #123761;
+}
+
+.tema {
+  margin-left: auto;
+}
+.tema button {
+  align-self: flex-end;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px 16px;
+  background: #eeeee4;
+  border-radius: 100px;
+}
+
+.portfolio {
+  margin-top: 64px;
+  display: block;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 32px;
+  background-color: #123761;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+  font-family: "Merriweather", serif;
+  color: #ecf4ff;
+}
+
+.projetos-titulo {
+  list-style: none;
+  line-height: 45px;
+  padding-left: 0;
+  font-size: 26px;
+  font-weight: 700;
+}
+.projetos-item {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 45px;
+  font-family: "Merriweather", serif;
+  color: #eeeee4;
+}
+/* aqui eu puxei a âncora. toda tag a que estiver dentro dos projetos-item */
+.projetos-item a {
+  color: #eeeee4;
+  font-family: "Koh Santepheap", cursive;
+  font-family: "Merriweather", serif;
+  text-decoration: none; /*esse comando tira a linha sublinhada do texto característico de link*/
+}
+
+.conquistas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 32px;
+  background-color: #123761;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.conquistas ul {
+  font-family: "Koh Santepheap", cursive;
+  color: #eeeee4;
+  list-style: none;
+  font-size: 26px;
+  font-weight: 700;
+  padding-left: 0;
+}
+.conquistas li {
+  list-style-type: none;
+}
+
+.conquistas img {
+  max-height: 100px;
+}
+
+/*  aqui vamos estilizar nosso tema para quando clicarmos ALTERAR TEMA e ele muda de cor*/
+.dark {
+  background-color: #eeeee4;
+}
+/* é a classe da nossa div. aqui estou estilizando o container quando clicar no ALTERAR TEMA */
+.dark .container {
+  background: #123761;
+  color: #f7f7f7;
+  font-family: "Koh Santepheap", cursive;
+}
+.dark .titulo {
+  color: #eeeee4;
+}
+
+.dark .projetos {
+  color: #123761;
+  background-color: #eeeee4;
+}
+
+.dark .projetos .projetos-item a {
+  color: #123761;
+}
+
+.dark .projetos .projetos-item {
+  color: #123761;
+}
+
+.dark .tema button {
+  background-color: #123761;
+  color: #f7f7f7;
+  border: 2px solid #f7f7f7;
+}
+.dark .list-inline {
+  background: #123761;
+  color: #eeeee4;
+  list-style: none;
+  display: inline-flex;
+  font-size: 30px;
+  margin: 0px;
+}
+
+.dark .list-inline li a {
+  color: #eeeee4;
+}
